@@ -46,6 +46,18 @@ const Quiz: FC<Props> = ({ questions }) => {
     setFinished(false);
   };
 
+  const resultMessage = () => {
+    if (score <= 4) {
+      return "You can do better!";
+    } else if (score >= 5 && score < 7) {
+      return "Not bad!";
+    } else if (score >= 7 && score < 10) {
+      return "Well done!";
+    } else {
+      return "You're a champion!";
+    }
+  };
+
   return (
     <div className="container">
       <h1>Trivia Quiz</h1>
@@ -54,6 +66,7 @@ const Quiz: FC<Props> = ({ questions }) => {
         <>
           <h2>
             You scored {score} points out of {questions.length} <br />
+            {resultMessage()}
           </h2>
           <button className="btn" onClick={reset}>
             Start again
