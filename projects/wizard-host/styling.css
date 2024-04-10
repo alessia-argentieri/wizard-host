@@ -265,3 +265,145 @@ footer nav a {
 .features-main .grid > *:nth-child(2) {
   grid-column: 1 / 3;
 }
+
+/* Docs */
+
+.docs-main {
+  text-align: left;
+}
+
+.docs-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+}
+
+.docs-main nav ul {
+  list-style: none;
+}
+
+.docs-main nav li {
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 2px rgb(240, 232, 253) solid;
+}
+
+.docs-main nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.docs-main nav a:hover {
+  font-weight: bold;
+}
+
+.docs-main .btn {
+  margin: 20px 0;
+}
+
+.docs-main h3 {
+  margin: 10px 0;
+}
+
+.docs-main .card ul {
+  list-style: none;
+}
+
+/* Animations */
+
+@keyframes SlideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes SlideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.showcase-text {
+  animation: SlideInFromLeft 1s ease-in;
+}
+
+.showcase-form {
+  animation: SlideInFromRight 1s ease-in;
+}
+
+.stats {
+  animation: SlideInFromBottom 1s ease-in;
+}
+
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid,
+  .features-main .grid,
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+
+  .features-head,
+  .features-sub-head,
+  .docs-head {
+    text-align: center;
+  }
+
+  .features-head img,
+  .features-sub-head img,
+  .docs-head img {
+    justify-self: center;
+  }
+  .features-main .grid > *:first-child,
+  .features-main .grid > *:nth-child(2) {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .body {
+    margin-left: 20px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar nav {
+    margin-right: 0;
+  }
+  .logo {
+    font-size: 20px;
+  }
+}
