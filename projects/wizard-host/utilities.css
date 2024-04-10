@@ -1,0 +1,198 @@
+/* Utilities */
+
+:root {
+  --primary-color: #0a1327;
+  --secondary-color: rgb(122, 111, 246);
+  --third-color: rgb(240, 232, 253);
+}
+
+/*rgb(248, 241, 252)*/
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  /*overflow: auto;*/
+}
+
+.flex {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  height: 100%;
+}
+
+.card {
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: white;
+  transform: scale(0.9);
+}
+
+.btn-border {
+  border: 1px solid var(--primary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+.bg-color {
+  background-color: var(--secondary-color);
+}
+
+.bg-light-color {
+  background-color: var(--third-color);
+}
+
+.alert {
+  background-color: var(--third-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert .alert-success {
+  background-color: green;
+}
+
+.alert-error {
+  background-color: red;
+}
+
+code,
+pre {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
